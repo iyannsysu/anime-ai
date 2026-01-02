@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Anime Terbaru</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Terbaru - Sansekai API</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>🔥 Anime Terbaru</h1>
-  <div id="anime-list" class="grid"></div>
+    <header>
+        <div class="container">
+            <h1>🎌 Anime Updates</h1>
+            <p>Update episode terbaru dari Sansekai API</p>
+        </div>
+    </header>
 
-  <script src="script.js"></script>
+    <div class="container">
+        <!-- Tempat munculnya list anime -->
+        <div id="anime-list" class="grid-container">
+            <p class="loading">Memuat data anime...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
