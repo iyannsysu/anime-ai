@@ -1,45 +1,80 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
-  margin: 0;
-  padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e; /* Warna gelap */
+    color: #fff;
+    margin: 0;
+    padding-bottom: 50px;
 }
 
-h1 {
-  text-align: center;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 16px;
-  margin-top: 20px;
+header {
+    background-color: #16213e;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e94560;
+    text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    color: #e94560;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Card Anime */
 .card {
-  background: #1e293b;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.2s;
+    background-color: #16213e;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 .card:hover {
-  transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+    width: 100%;
+    height: 280px;
+    object-fit: cover; /* Agar gambar tidak gepeng */
 }
 
-.card .content {
-  padding: 10px;
+.card-content {
+    padding: 15px;
 }
 
-.card a {
-  color: #38bdf8;
-  text-decoration: none;
-  font-size: 14px;
+.card h3 {
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; /* Titik-titik jika judul kepanjangan */
+}
+
+.episode-tag {
+    background-color: #e94560;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.loading {
+    text-align: center;
+    width: 100%;
+    grid-column: 1 / -1;
 }
